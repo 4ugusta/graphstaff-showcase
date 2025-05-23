@@ -1,0 +1,15 @@
+{
+  "name": "graphstaff-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seed": "cd backend && node src/seed.js",
+    "install:all": "npm i && cd backend && npm i && cd ../frontend && npm i"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

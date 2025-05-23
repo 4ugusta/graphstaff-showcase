@@ -1,0 +1,29 @@
+{
+  "name": "graphstaff-backend",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed.js",
+    "debug": "node src/debug.js",
+    "test-password": "node test-password.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.11.1",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "graphql-middleware": "^6.1.33",
+    "@graphql-tools/schema": "^9.0.4",
+    "compression": "^1.7.4",
+    "helmet": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
